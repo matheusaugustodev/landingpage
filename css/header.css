@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #060606;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.logo {
+    width: 7rem;
+}
+li, a, button {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 5%;
+}
+
+
+.navigation-social {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+    /* margin-left: auto; */
+}
+.navigation-social svg {
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+    transition: all 0.4s;
+}
+.navigation-social svg:hover {
+    opacity: 1;
+    transform: translateY(-5px);
+    cursor: pointer ;
+}
+.navigation-social i {
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+    transition: all 0.4s;
+}
+.navigation-social i:hover {
+    opacity: 1;
+    transform: translateY(-5px);
+    cursor: pointer ;
+}
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #0088a9;
+}
+
+section img {
+    width: 25%;
+    background-color: #252525;
+    border-radius: 1rem;
+    height: 25%;
+}
+
+section {
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-start;
+    gap: 5rem;
+    padding: 30px 5%;
+}
+
+section .title {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+section .apresentation {
+    line-height: 1.7rem;
+}
+
+.aboutme {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.aboutme .options {
+    list-style: none;
+    letter-spacing: 3rem;
+    cursor: default;
+    margin-top: 2rem;
+}
+
+.aboutme .options li {
+    display: inline-block;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.aboutme .options .active {
+    padding-bottom: 4px;
+    border-bottom: 4px solid #0088a9;
+}
+
+.aboutme .option-result {
+    list-style: none;
+    color: #0088a9;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.aboutme .option-result .main {
+    color: #0088a9;
+}
+
+.aboutme .option-result div {
+    line-height: 20px;
+}
+
+@media (max-width: 1340px) {
+    section {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    section img {
+        width: 30%;
+    }
+   
+}
+
+@media (max-width: 780px) {
+    section img {
+        width: 50%;
+    }
+}
